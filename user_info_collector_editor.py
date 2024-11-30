@@ -22,7 +22,7 @@ def main():
 
     # Main function to collect and save personal information
 
-    print("\nPersonal Information Collector\n")
+    print("\nPERSONAL INFORMATION COLLECTOR\n")
 
     data = ["Full Name", "Age", "Address", "Contact Number", "Email", "Occupation", "Marital Status", "Nationality", "Gender", "Hobbies", "Source of Income"]
     people = []
@@ -32,10 +32,13 @@ def main():
         user_info = personal_info(data)
         people.append(user_info)
         
-        another_entry = input("Add another person as an entry? (yes/no): ")
-        if another_entry != "yes":
+        another_entry = input("\nAdd another person as an entry? (Yes/No): ")
+        if another_entry != "Yes":
             break
     
     write_info(people, data)
-    print("\nAll data have been saved. Rest asured that you informations will be kept hidden. Thank you!")
+    print("\nAll data have been saved. Rest asured that your informations will be kept hidden. Thank you!")
 
+# This calls the main function which starts the program
+if __name__ == "__main__":
+    main()
