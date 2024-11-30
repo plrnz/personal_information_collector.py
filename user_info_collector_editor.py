@@ -10,14 +10,12 @@ def personal_info(data):
     return user_info
 
 def write_info(people, data, filename="info_file.txt"):
-    collected_info = open("./info_file.txt", "w") # Open a text file in write mode
-
-    for person in people: 
-        for info_index in range(len(data)):
-            collected_info.write(f"{data[info_index]}: {person[info_index]}\n")
+    with open("./info_file.txt", "w") as collected_info: # Open a text file in write mode
+        for person in people: 
+            for info_index in range(len(data)):
+                collected_info.write(f"{data[info_index]}: {person[info_index]}\n")
         collected_info.write("-" * 40 + "\n")
 
-    collected_info.close()
 
 def main():
 
