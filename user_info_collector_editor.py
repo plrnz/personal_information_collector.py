@@ -22,13 +22,20 @@ def main():
 
     # Main function to collect and save personal information
 
-    print("Personal Information Collector\n")
+    print("\nPersonal Information Collector\n")
 
     data = ["Full Name", "Age", "Address", "Contact Number", "Email", "Occupation", "Marital Status", "Nationality", "Gender", "Hobbies", "Source of Income"]
     people = []
 
     while True:
-        print("\nProvide the details for one person:")
+        print("\nProvide the details for one person: \n")
         user_info = personal_info(data)
         people.append(user_info)
         
+        another_entry = input("Add another person as an entry? (yes/no): ")
+        if another_entry != "yes":
+            break
+    
+    write_info(people, data)
+    print("\nAll data have been saved. Rest asured that you informations will be kept hidden. Thank you!")
+
