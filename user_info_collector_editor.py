@@ -17,3 +17,11 @@ def write_info(people, data, filename="info_file.txt"):
             collected_info.write(f"{data[info_index]}: {person[info_index]}\n")
 
     collected_info.close()
+
+def main():
+
+    # Main function to collect and save personal information
+
+    print("Personal Information Collector\n")
+
+    
