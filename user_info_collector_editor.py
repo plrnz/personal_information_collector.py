@@ -24,4 +24,11 @@ def main():
 
     print("Personal Information Collector\n")
 
-    
+    data = ["Full Name", "Age", "Address", "Contact Number", "Email", "Occupation", "Marital Status", "Nationality", "Gender", "Hobbies", "Source of Income"]
+    people = []
+
+    while True:
+        print("\nProvide the details for one person:")
+        user_info = personal_info(data)
+        people.append(user_info)
+        
