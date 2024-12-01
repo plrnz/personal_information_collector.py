@@ -1,0 +1,1 @@
+with open("./info_file.txt", "r") as stored_info:
