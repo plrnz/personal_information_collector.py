@@ -1,11 +1,11 @@
 with open("./info_file.txt", "r") as stored_data:
     data_info = stored_data.read().split("-" * 20)
 
-find_name = input("Please enter the name of the person that you want to have the information: ").strip()
+find_name = input("\nPlease enter the name you want to find: ").strip()
 
 for entry in data_info:
     if find_name in entry:
-        print("Information found.\n")
+        print("\nInformation found.\n")
         print(entry.strip())
         break
 else:
