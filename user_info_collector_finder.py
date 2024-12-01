@@ -6,6 +6,7 @@ find_name = input("\nPlease enter the name you want to find: ").strip()
 for entry in data_info:
     if find_name in entry:
         print("\nInformation found.\n")
+        print("\nUploading the informations: \n")
         print(entry.strip())
         break
 else:
