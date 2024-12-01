@@ -16,8 +16,10 @@ for line in lines:
 if one_person_info:
     data_info.append(one_person_info)
 
+entry_counter = 1
 for entry in data_info:
-
+    print(f"Entry #{entry_counter}")
     for info in entry:
         print(info)
     print("-•-" * 20)
+    entry_counter += 1
