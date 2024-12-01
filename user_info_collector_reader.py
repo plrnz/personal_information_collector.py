@@ -11,4 +11,7 @@ for line in lines:
             data_info.append(one_person_info)
         one_person_info = []
     else:
-        one_person_info.append(line.strip())
+        one_person_info(line.strip())
+
+if one_person_info:
+    data_info.append(one_person_info)
