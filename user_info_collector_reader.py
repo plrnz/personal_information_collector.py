@@ -11,7 +11,13 @@ for line in lines:
             data_info.append(one_person_info)
         one_person_info = []
     else:
-        one_person_info(line.strip())
+        one_person_info.append(line.strip())
 
 if one_person_info:
     data_info.append(one_person_info)
+
+for entry in data_info:
+
+    for info in entry:
+        print(info)
+    print("-•-" * 20)
