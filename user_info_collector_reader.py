@@ -6,7 +6,7 @@ data_info = []
 one_person_info = [] 
 
 for line in lines:
-    if "-" * 40 in line:
+    if "-•-" * 20 in line:
         if one_person_info:
             data_info.append(one_person_info)
         one_person_info = []
@@ -23,3 +23,4 @@ for entry in data_info:
         print(info)
     print("-•-" * 20)
     entry_counter += 1
+    

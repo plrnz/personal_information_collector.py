@@ -14,7 +14,7 @@ def write_info(people, data, filename="info_file.txt"):
         for person in people: 
             for info_index in range(len(data)):
                 collected_info.write(f"{data[info_index]}: {person[info_index]}\n")
-            collected_info.write("-" * 40 + "\n")
+            collected_info.write("-•-" * 40 + "\n")
 
 def main():
 
